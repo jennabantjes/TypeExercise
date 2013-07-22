@@ -182,6 +182,10 @@ article {
   padding: 1em;
 }
 
+p {
+  width: 85%;
+}
+
 p a {
   color: black;
   font-family: 'OpenSans-Regular';
@@ -207,6 +211,7 @@ p a:hover {
 .image2 {
   float: left;
   margin: 0.5em 2.1em 0 0;
+  width: 21em;
 }
 
 .image3 {
