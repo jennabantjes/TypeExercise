@@ -41,6 +41,7 @@ figure {
 
 body {
   font-family: sans-serif;
+  font: 14pt/ 1.5;
 }
 
 p {
@@ -119,8 +120,121 @@ sub {
 /* Demo Styles - Do most, if not all, of your work here.                                          */
 /* ============================================================================================== */
 
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src:url('../fonts/playfairdisplay-regular.eot');
+    src:url('../fonts/playfairdisplay-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/playfairdisplay-regular.woff') format('woff'),
+        url('../fonts/playfairdisplay-regular.ttf') format('truetype'),
+        url('../fonts/playfairdisplay-regular.svg#playfairdisplay-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplaySCItalic';
+    src:url('../fonts/playfairdisplaysc-italic.eot');
+    src:url('../fonts/playfairdisplaysc-italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/playfairdisplaysc-italic.woff') format('woff'),
+        url('../fonts/playfairdisplaysc-italic.ttf') format('truetype'),
+        url('../fonts/playfairdisplaysc-italic.svg#playfairdisplaysc-italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplaySC';
+    src:url('../fonts/playfairdisplaysc-regular.eot');
+    src:url('../fonts/playfairdisplaysc-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/playfairdisplaysc-regular.woff') format('woff'),
+        url('../fonts/playfairdisplaysc-regular.ttf') format('truetype'),
+        url('../fonts/playfairdisplaysc-regular.svg#playfairdisplaysc-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src:url('../fonts/opensans-light-webfont.eot');
+    src:url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/opensans-light-webfont.woff') format('woff'),
+        url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+        url('../fonts/opensans-light-webfont.svg#opensans-light-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src:url('../fonts/opensans-regular-webfont.eot');
+    src:url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/opensans-regular-webfont.woff') format('woff'),
+        url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+        url('../fonts/opensans-regular-webfont.svg#opensans-regular-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+article {
+  font-family: 'OpenSans', Arial, sans-serif;
+  margin: auto;
+  max-width: 1024px;
+  padding: 1em;
+}
+
+p a {
+  color: black;
+  font-family: 'OpenSans-Regular';
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.byline {
+  font-family: 'OpenSans-Regular';
+  font-size: 0.707em;
+  line-height: 4.24;
+}
+
+.image {
+  float: right;
+  margin: 0.5em 0 0 2.1em;
+  width: 25em;
+}
+
+.image2 {
+  float: left;
+  margin: 0.5em 2.1em 0 0;
+}
+
+.image3 {
+  float:right;
+  margin: 0.5em 0 0 2.1em;
+  width: 31.5em;
+}
+
+.caption {
+  font-family: 'OpenSans-Regular', 'Times New Roman', serif;
+  font-size: 0.707em;
+  line-height: 2.12;
+}
+
 article header {
-  margin-bottom: 1.5em;
+  margin: 1.5em 0;
+}
+
+article header h1 {
+    font-family: 'PlayfairDisplay', 'Times New Roman', serif;
+    font-size: 2.827em;
+    line-height: 1.601 ;
+}
+
+article header h2  {
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-size: 1.414em;
+  line-height: 1.061;
 }
 
 figure {
@@ -128,7 +242,32 @@ figure {
 }
 
 aside {
+  font-family: 'PlayfairDisplaySC', 'Times New Roman', serif;
+  font-size: 1.414em;
+  line-height: 1.061;
   margin-bottom: 1.5em;
+}
+
+aside.callout {
+  float: left;
+  margin: 0 1em 0 0;
+  width: 10.5em;
+}
+
+aside.callout-right {
+  float: right;
+  margin: 0  0 0 1em;
+  width: 10.5em;
+}
+
+aside.callout p {
+  margin-bottom: 0;
+}
+
+aside h3 {
+  font-family: 'PlayfairDisplaySCItalic', 'Times New Roman', serif;
+  font-size:1.414em;
+  line-height: 1.061;
 }
 
 figure img {
