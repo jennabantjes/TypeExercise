@@ -183,47 +183,18 @@ article {
 }
 
 p {
-  width: 85%;
+  margin-left: 16em;
+  width: 75%;
 }
 
-p a {
+a {
   color: black;
   font-family: 'OpenSans-Regular';
   text-decoration: none;
 }
 
-p a:hover {
+a:hover {
   text-decoration: underline;
-}
-
-.byline {
-  font-family: 'OpenSans-Regular';
-  font-size: 0.707em;
-  line-height: 4.24;
-}
-
-.image {
-  float: right;
-  margin: 0.5em 0 0 2.1em;
-  width: 25em;
-}
-
-.image2 {
-  float: left;
-  margin: 0.5em 2.1em 0 0;
-  width: 21em;
-}
-
-.image3 {
-  float:right;
-  margin: 0.5em 0 0 2.1em;
-  width: 31.5em;
-}
-
-.caption {
-  font-family: 'OpenSans-Regular', 'Times New Roman', serif;
-  font-size: 0.707em;
-  line-height: 2.12;
 }
 
 article header {
@@ -242,34 +213,21 @@ article header h2  {
   line-height: 1.061;
 }
 
-figure {
-  margin-bottom: 1.5em;
-}
-
 aside {
   font-family: 'PlayfairDisplaySC', 'Times New Roman', serif;
   font-size: 1.414em;
   line-height: 1.061;
   margin-bottom: 1.5em;
+  padding: 1em 1em 1em 10.5em;
 }
 
-aside.callout {
-  float: left;
-  margin: 0 1em 0 0;
-  width: 10.5em;
+figure {
+  font-family: 'PlayfairDisplaySC', 'Times New Roman', serif;
+  font-size: 1.414em;
+  line-height: 1.061;
 }
 
-aside.callout-right {
-  float: right;
-  margin: 0  0 0 1em;
-  width: 10.5em;
-}
-
-aside.callout p {
-  margin-bottom: 0;
-}
-
-aside h3 {
+figure h3 {
   font-family: 'PlayfairDisplaySCItalic', 'Times New Roman', serif;
   font-size:1.414em;
   line-height: 1.061;
@@ -279,8 +237,55 @@ figure img {
   max-width: 100%;
 }
 
+figcaption {
+  font-family: 'OpenSans-Regular', 'Times New Roman', serif;
+  font-size: 0.707em;
+  line-height: 2.12;
+}
+
+figcaption a {
+  font-family: 'OpenSans-Bold';
+}
+
 article footer p {
   margin-bottom: 0.5em;
+}
+
+.pull-quote:before {
+  content: '\00a7';
+}
+
+.byline {
+  font-family: 'OpenSans-Regular';
+  font-size: 0.707em;
+  line-height: 4.24;
+}
+
+.caption {
+  font-size: 0.5em;
+  line-height: 2.57;
+}
+
+.image {
+  float: right;
+  margin: 0.5em 0 0 2.1em;
+  width: 26.25em;
+}
+
+.callout {
+  float: left;
+  margin: 0 1em 1em 0;
+  width: 10.5em;
+}
+
+.callout-right {
+  float: right;
+  margin: 0  0 1em 1em;
+  width: 10.5em;
+}
+
+.callout p {
+  margin-bottom: 0;
 }
 
 /* Helper Classes =============================================================================== */
