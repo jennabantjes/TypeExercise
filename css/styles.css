@@ -176,20 +176,22 @@ sub {
 }
 
 article {
+  border-top: 4px solid;
   font-family: 'OpenSans', Arial, sans-serif;
   margin: auto;
   max-width: 1024px;
-  padding: 1em;
 }
 
 p {
   float: right;
+  font-size: 1.1em;
+  padding-right: 3em;
   width: 70%;
 }
 
 a {
   color: black;
-  font-family: 'OpenSans-Regular';
+  font-family: 'OpenSans-Regular', Arial, sans-serif;
   text-decoration: none;
 }
 
@@ -200,6 +202,7 @@ a:hover {
 article header {
   float: right;
   margin: 1.5em 0;
+  padding-right: 3em;
   width: 70%;
 }
 
@@ -220,12 +223,17 @@ article header h2  {
 blockquote {
   float: right;
   font-family: 'PlayfairDisplaySC', 'Times New Roman', serif;
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1;
   margin: 0 0em 1em 0em;
+  padding-right: 3em;
   text-align: left;
   text-indent: -1em;
   width: 70%;
+}
+
+blockquote:before {
+  content: '\00a7';
 }
 
 figure {
@@ -251,19 +259,15 @@ figcaption {
 }
 
 figcaption a {
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans-Bold', Arial, sans-serif;
 }
 
 article footer p {
   margin-bottom: 0.5em;
 }
 
-blockquote:before {
-  content: '\00a7';
-}
-
 .byline {
-  font-family: 'OpenSans-Regular';
+  font-family: 'OpenSans-Regular', Arial, sans-serif;
   font-size: 0.667em;
   line-height: 2.25;
 }
@@ -275,20 +279,18 @@ blockquote:before {
 
 .image {
   float: right;
+  padding-right: 3em;
   width: 70%;
 }
 
 .callout {
+  border-bottom: 1px solid #bbb;
+  border-top: 1px solid #bbb;
   float: left;
   margin: 0 1em 1em 0;
+  padding: 1em 0;
   text-align: right;
   width: 25%;
-}
-
-.callout-right {
-  float: right;
-  margin: 0  0 1em 1em;
-  width: 10.5em;
 }
 
 .callout p {
