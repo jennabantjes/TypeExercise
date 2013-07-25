@@ -41,7 +41,6 @@ figure {
 
 body {
   font-family: sans-serif;
-  font: 14pt/ 1.5;
 }
 
 p {
@@ -220,7 +219,7 @@ article header h2  {
   margin-bottom: 0.25em;
 }
 
-blockquote {
+aside {
   float: right;
   font-family: 'PlayfairDisplaySC', 'Times New Roman', serif;
   font-size: 1.25em;
@@ -232,17 +231,17 @@ blockquote {
   width: 70%;
 }
 
-blockquote:before {
+aside.pull-quote:before {
   content: '\00a7';
 }
 
-figure {
+aside {
   font-family: 'PlayfairDisplaySC', 'Times New Roman', serif;
   font-size: 1.5em;
   line-height: 1;
 }
 
-figure h3 {
+aside h3 {
   font-family: 'PlayfairDisplaySCItalic', 'Times New Roman', serif;
   font-size:1.25em;
   line-height: 1;
@@ -252,7 +251,7 @@ figure img {
   max-width: 100%;
 }
 
-figcaption {
+figcaption, aside p {
   font-family: 'OpenSans-Regular', 'Times New Roman', serif;
   font-size: 0.667em;
   line-height: 2.25;
